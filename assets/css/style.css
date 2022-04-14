@@ -1,17 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Ceviche+One&family=Exo:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+/* navbar styling */
+.navbar {
+    background-color: #01090D;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+    margin-right: 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+.logo1 {
+    font-family: 'Ceviche One', cursive;
+}
+
+.logo2 {
+    font-family: 'Bevan', cursive;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-right: 5px;
+}
+
+.nav-link:hover {
+    color: red;
+    border-bottom: 2px solid #fff;
+}
+
+.navbar-nav .nav-link {
+    text-align: center;
+}
+
+.offcanvas-body {
+    background-color: #733238;
+}
+
+.offcanvas-header {
+    justify-content: flex-end;
+    height: 66px;
+}
+
+.offcanvas-header .btn-close {
+    margin-right: 0.6rem;
+}
+
+.navbar-toggler {
+    color: #fff;
+    border-color: #01090D;
     /* background-color: red; */
 }
-.invisible-bar{
-    display:none;
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 2em;
+    height: 3px;
+    background-color: red;
+    transition: transform 250ms ease-in-out;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    right: 0;
+}
+
+.hamburger::before {
+    bottom: 6px;
+}
+
+.hamburger::after {
+    top: 6px;
+}
+
+/* hero page styling */
 .hero-page {
-    background-color: bisque;
-    /* background-color: #01090D; */
+    /* background-color: bisque; */
+    background-color: #01090D;
     height: 100vh;
     display: flex;
     align-content: center;
@@ -20,12 +110,31 @@
 
 .side-bar {
     display: flex;
-    background-color: red;
+    background-color: #01090D;
     align-items: flex-end;
     justify-content: center;
     position: fixed;
     height: 100%;
     width: 10%;
+}
+
+.social-menu {
+    padding-bottom: 60px;
+}
+
+.social-menu li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.social-menu li a {
+    color: aqua;
+    font-size: 20px;
+
+}
+
+.social-menu li a:hover {
+    color: yellow
 }
 
 .col {
@@ -45,11 +154,17 @@
     background-color: aquamarine;
 }
 
-.hero-text {
+.hero-text-box {
     padding: 10%;
+    color: #fff;
 }
 
-.text {
+.hr-txt2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(40px, 8vw, 60px);
+}
+
+.hr-txt4 {
     margin: 20px 0px 0px;
     max-width: 540px;
 
