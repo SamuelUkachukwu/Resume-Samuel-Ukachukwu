@@ -1,12 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;700&display=swap');
-*{
-    margin:0;
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: red;
+    /* background-color: red; */
 }
-.logo {
-background: url(../images/20191025_162241.jpg) no-repeat center;
-background-size: cover;
-min-height: 360px;
+
+.hero-page {
+    background-color: bisque;
+    /* background-color: #01090D; */
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    padding: 0;
+}
+
+.side-bar {
+    display: flex;
+    background-color: red;
+    align-items: flex-end;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+}
+
+.about {
+    height: 100vh;
+    background-color: aquamarine;
 }
