@@ -6,7 +6,9 @@
     box-sizing: border-box;
     /* background-color: red; */
 }
-
+.invisible-bar{
+    display:none;
+}
 .hero-page {
     background-color: bisque;
     /* background-color: #01090D; */
@@ -23,9 +25,43 @@
     justify-content: center;
     position: fixed;
     height: 100%;
+    width: 10%;
+}
+
+.col {
+    width: 90%;
+    /* background-color: blue; */
+    margin-left: 10%;
+}
+
+.col-hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .about {
     height: 100vh;
     background-color: aquamarine;
+}
+
+.hero-text {
+    padding: 10%;
+}
+
+.text {
+    margin: 20px 0px 0px;
+    max-width: 540px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .side-bar {
+        display: none;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0;
+    }
 }
