@@ -139,16 +139,86 @@
 
 .col {
     width: 90%;
-    /* background-color: blue; */
     margin-left: 10%;
+
 }
 
 .col-hero {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
 }
 
+.base {
+    width: 90%;
+    height: 3px;
+    background-color: #80F8FF;
+    position: absolute;
+    bottom: 40px;
+}
+
+.circle1 {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 45px;
+    bottom: 45px;
+}
+.circle2{
+    width: 70px;
+    height: 70px;
+    background-color: #80F8FF;
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.circle3{
+    width: 40px;
+    height: 40px;
+    background-color: #80F8FF;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    bottom: 65px;
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 300;
+    font-family: 'Ceviche One', cursive;
+    align-items: center;
+    justify-content: center;
+}
+
+.side {
+    width:10px;
+    height: 30vh;
+    background-color:#01090D;
+    position:absolute;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    color:#fff;
+    right:70px;
+    bottom:120px;
+}
+.side a{
+    font-size: 12px;
+    text-decoration: none;
+    color:#fff;
+
+}
+.side2{
+    width:3px;
+    height: 10vh;
+    background-color:#80F8FF;
+    position:absolute;
+    right:70px;
+    bottom:120px;
+}
+/* about page styling */
 .about {
     height: 100vh;
     background-color: aquamarine;
@@ -171,7 +241,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .side-bar {
+    .side-bar, .fancy {
         display: none;
     }
 
@@ -179,4 +249,21 @@
         width: 100%;
         margin: 0;
     }
+}
+
+.animation {
+    /* margin-top: 10px;
+    font-size: 3rem;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px #000, 0 0 25px #3901FF, 0 0 5px #210099;
+    color: #FFF7F8; */
+    transition: .3s ease-out;
+}
+
+.animation:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    color: #fffe97;
 }
