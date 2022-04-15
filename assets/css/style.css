@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bevan&family=Ceviche+One&family=Exo:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap');
-
+:root {
+    --dark-red: #8C1616;
+    --red:#BF1F1F;
+    --black: #01090D;
+    --white: #e6f1ff;
+    --green: #80F8FF;
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +15,14 @@
 
 /* navbar styling */
 .navbar {
-    background-color: #01090D;
+    background-color: var(--dark-red);
 }
 
 .navbar-brand {
     margin-left: 1rem;
     margin-right: 0;
     font-size: 26px;
-    color: #fff;
+    color: var(--white);
 }
 
 .logo1 {
@@ -28,15 +34,15 @@
 }
 
 .nav-link {
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
     letter-spacing: 1.5px;
     margin-right: 5px;
 }
 
 .nav-link:hover {
-    color: red;
-    border-bottom: 2px solid #fff;
+    color: var(--black);
+    border-bottom: 2px solid var(--white);
 }
 
 .navbar-nav .nav-link {
@@ -44,7 +50,7 @@
 }
 
 .offcanvas-body {
-    background-color: #733238;
+    background-color: var(--dark-red);
 }
 
 .offcanvas-header {
@@ -57,8 +63,8 @@
 }
 
 .navbar-toggler {
-    color: #fff;
-    border-color: #01090D;
+    color:var(--white);
+    border-color: var(--dark-red);
     /* background-color: red; */
 }
 
@@ -78,7 +84,7 @@
 .hamburger::after {
     width: 2em;
     height: 3px;
-    background-color: red;
+    background-color: var(--white);
     transition: transform 250ms ease-in-out;
 }
 
@@ -101,7 +107,7 @@
 /* hero page styling */
 .hero-page {
     /* background-color: bisque; */
-    background-color: #01090D;
+    background-color: var(--dark-red);
     height: 100vh;
     display: flex;
     align-content: center;
@@ -110,7 +116,7 @@
 
 .side-bar {
     display: flex;
-    background-color: #01090D;
+    background-color: var(--dark-red);
     align-items: flex-end;
     justify-content: center;
     position: fixed;
@@ -128,21 +134,34 @@
 }
 
 .social-menu li a {
-    color: aqua;
+    color: var(--white);
     font-size: 20px;
 
 }
 
 .social-menu li a:hover {
-    color: yellow
+    color:var(--green);
 }
 
 .col {
     width: 90%;
+    height: 100vh;
     margin-left: 10%;
-
 }
-
+/* .col-header{
+    padding: 20px;
+    letter-spacing: 1px;
+display: flex;
+text-transform: uppercase;
+font-weight: bold;
+    /* -webkit-box-align: center; */
+    /* align-items: center; */
+    /* position: relative; */
+    /* margin: 10px 0px 40px; */
+    /* width: 100%; */
+    /* font-size: clamp(26px,5vw,32px); */
+    /* white-space: nowrap; 
+} */
 .col-hero {
     display: flex;
     align-items: center;
@@ -150,10 +169,26 @@
     position: relative;
 }
 
+.hero-text-box {
+    padding: 10%;
+    color: var(--white);
+}
+
+.hr-txt2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(40px, 8vw, 60px);
+}
+
+.hr-txt4 {
+    margin: 20px 0px 0px;
+    max-width: 540px;
+
+}
+
 .base {
     width: 90%;
     height: 3px;
-    background-color: #80F8FF;
+    background-color: var(--black);
     position: absolute;
     bottom: 40px;
 }
@@ -161,25 +196,27 @@
 .circle1 {
     width: 60px;
     height: 60px;
-    background-color: red;
+    background-color: var(--black);
     border-radius: 50%;
     position: absolute;
     right: 45px;
     bottom: 45px;
 }
-.circle2{
+
+.circle2 {
     width: 70px;
     height: 70px;
-    background-color: #80F8FF;
+    background-color: var(--green);
     border-radius: 50%;
     position: absolute;
     right: 40px;
     bottom: 40px;
 }
-.circle3{
+
+.circle3 {
     width: 40px;
     height: 40px;
-    background-color: #80F8FF;
+    background-color: var(--green);
     border-radius: 50%;
     position: absolute;
     right: 50px;
@@ -194,54 +231,69 @@
 }
 
 .side {
-    width:10px;
+    width: 10px;
     height: 30vh;
-    background-color:#01090D;
-    position:absolute;
+    background-color: var(--dark-red);
+    position: absolute;
     writing-mode: vertical-lr;
     text-orientation: sideways;
-    color:#fff;
-    right:70px;
-    bottom:120px;
+    color: var(--white);
+    right: 70px;
+    bottom: 120px;
 }
-.side a{
+
+.side a {
     font-size: 12px;
     text-decoration: none;
-    color:#fff;
+    color: var(--white);
 
 }
-.side2{
-    width:3px;
+
+.side2 {
+    width: 3px;
     height: 10vh;
-    background-color:#80F8FF;
-    position:absolute;
-    right:70px;
-    bottom:120px;
+    background-color: var(--black);
+    position: absolute;
+    right: 70px;
+    bottom: 120px;
 }
+
 /* about page styling */
-.about {
-    height: 100vh;
-    background-color: aquamarine;
+.about{
+    /* height: 90vh; */
+    background-color: var(--dark-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-text-box {
-    padding: 10%;
-    color: #fff;
+.about-text {
+    width: 590px;
+    /* height: 280px; */
+    background-color: var(--red);
+    color: var(--white);
+    z-index: 2;
+    padding: 20px 20px 40px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 100%);
 }
 
-.hr-txt2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: clamp(40px, 8vw, 60px);
+.about-image {
+    width: 328px;
+    /* height: 420px; */
+    background-color: var(--red);
+    margin-left: -20px;
+    box-shadow: 5px 4px 4px rgb(0 0 0 / 100%);
 }
 
-.hr-txt4 {
-    margin: 20px 0px 0px;
-    max-width: 540px;
-
+#picture-me {
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
-    .side-bar, .fancy {
+
+    .side-bar,
+    .fancy {
         display: none;
     }
 
@@ -249,15 +301,29 @@
         width: 100%;
         margin: 0;
     }
+    .about{
+        display: block;
+        text-align: center;
+    }
+    .about-boxes{
+        margin: auto;
+    }
+    .about-text{
+        width: 90%;
+    }
+    .about-image{
+        width: 50%;
+        margin-top: -10px;
+    }
 }
 
-.animation {
-    /* margin-top: 10px;
+/* .animation {
+    margin-top: 10px;
     font-size: 3rem;
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 5px;
     text-shadow: 1px 1px 2px #000, 0 0 25px #3901FF, 0 0 5px #210099;
-    color: #FFF7F8; */
+    color: #FFF7F8;
     transition: .3s ease-out;
 }
 
@@ -266,4 +332,4 @@
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     color: #fffe97;
-}
+} */
