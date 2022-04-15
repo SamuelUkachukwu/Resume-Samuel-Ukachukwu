@@ -384,9 +384,10 @@ padding: 20px; */
     .project{
         display: block;
     }
-    .project-info-card{
+    .project-info-card, #lotusforever{
         width: 90%;
 margin: auto;
+z-index: 1;
     }
     .project-img{
 margin: auto;
