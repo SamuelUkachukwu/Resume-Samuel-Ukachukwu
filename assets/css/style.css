@@ -351,6 +351,12 @@ padding: 20px; */
 .reverse-flex{
     justify-content: flex-start;
 }
+.others{
+    justify-content: space-evenly;
+}
+.card{
+    margin: 10px;
+}
 /* media screen styling starts here */
 @media screen and (max-width: 768px) {
 
