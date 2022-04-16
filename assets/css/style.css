@@ -26,7 +26,9 @@
     font-size: 26px;
     color: var(--white);
 }
-
+.navbar-brand:hover{
+    color: var(--black);
+}
 .logo1 {
     font-family: 'Ceviche One', cursive;
 }
@@ -67,7 +69,6 @@
 .navbar-toggler {
     color: var(--white);
     border-color: var(--dark-red);
-    /* background-color: red; */
 }
 
 .navbar-toggler:focus {
@@ -108,7 +109,6 @@
 
 /* hero page styling */
 .hero-page {
-    /* background-color: bisque; */
     background-color: var(--dark-red);
     height: 100vh;
     display: flex;
@@ -143,12 +143,11 @@
 }
 
 .social-menu li a:hover {
-    color: var(--green);
+    color: var(--black);
 }
 
 .col {
     width: 90%;
-    /* height: 100vh; */
     margin-left: 10%;
     padding: 5% 10px;
     background-color: var(--dark-red);
@@ -252,13 +251,6 @@
 }
 
 /* about page styling */
-.about {
-    /* background-color: var(--dark-red);
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-}
-
 .about-text {
     width: 590px;
     background-color: var(--red);
@@ -277,86 +269,95 @@
 
 #picture-me {
     width: 100%;
-    /* height: 60vh; */
 }
 
 /* project section styling */
-.project {
-/* background-color: blueviolet;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 20px; */
-}
-.project-img{
-    /* display: inline-block; */
+.project-img {
     width: 70%;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 100%);
 }
-.project-img img{
+
+.project-img img {
     width: 100%;
 }
 
 .project-info-card {
     margin-left: -150px;
     width: 60%;
-    /* height: 40vh; */
-    background-color:hsla(9, 100%, 64%, 0.5);
-    /* display: flex; */
+    background-color: hsla(9, 100%, 64%, 0.5);
     padding: 20px;
     border-radius: 10px;
     color: var(--white);
 }
-.project-intro{
+
+.project-intro {
     text-align: right;
     margin: 10px 0px;
 }
-.project-title{
+
+.project-title {
     text-align: right;
     font-family: 'Roboto', sans-serif;
 }
-.project-description{
+
+.project-description {
     text-align: justify;
     padding: 25px;
     border-radius: 10px;
     background-color: var(--red);
 }
-.project-languages{
+
+.project-languages {
     list-style: none;
     display: flex;
     margin: 0;
     justify-content: flex-end;
 }
-.project-languages li{
+
+.project-languages li {
     padding: 10px 20px;
     margin-right: 10px;
 }
-.project-links{
+
+.project-links {
     font-size: 20px;
     display: flex;
     justify-content: flex-end;
+    
 }
-.project-links a{
+
+.project-links a {
     padding: 5px;
-    margin-right: 20px
+    margin: 0px 20px;
+    color: var(--white);
 }
-#lotusforever{
+.project-links a:hover{
+    color: var(--black);
+}
+#lotusforever {
     margin: 0;
     margin-right: -150px;
     z-index: 1;
 }
-.reverse{
+
+.reverse {
     text-align: left;
 }
-.reverse-flex{
+
+.reverse-flex {
     justify-content: flex-start;
 }
-.others{
+
+.others {
     justify-content: space-evenly;
 }
-.card{
+
+.card {
     margin: 10px;
+    background-color: var(--red);
+    color: var(--white);
 }
+
 /* media screen styling starts here */
 @media screen and (max-width: 768px) {
 
@@ -387,16 +388,20 @@ padding: 20px; */
         width: 50%;
         margin-top: -10px;
     }
-    .project{
+
+    .project {
         display: block;
     }
-    .project-info-card, #lotusforever{
+
+    .project-info-card,
+    #lotusforever {
         width: 90%;
-margin: auto;
-z-index: 1;
+        margin: auto;
+        z-index: 1;
     }
-    .project-img{
-margin: auto;
-width: 60%;
+
+    .project-img {
+        margin: auto;
+        width: 60%;
     }
 }
