@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bevan&family=Ceviche+One&family=Exo:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-    --dark-red: #8C1616;
-    --red: #BF1F1F;
-    --bright-red:#FF9593;
+    --dark-red: #421313;
+    --red: #763434;
+    --light-red: #BF1F1F;
+    --bright-red: #FF9593;
     --black: #01090D;
     --white: #e6f1ff;
     --green: #80F8FF;
+    /* }#8C1616 */
+    /* #BF1F1F */
 }
 
 * {
@@ -28,9 +31,11 @@
     font-size: 26px;
     color: var(--white);
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     color: var(--black);
 }
+
 .logo1 {
     font-family: 'Ceviche One', cursive;
 }
@@ -325,7 +330,7 @@
     font-size: 20px;
     display: flex;
     justify-content: flex-end;
-    
+
 }
 
 .project-links a {
@@ -333,9 +338,11 @@
     margin: 0px 20px;
     color: var(--white);
 }
-.project-links a:hover{
+
+.project-links a:hover {
     color: var(--black);
 }
+
 #lotusforever {
     margin: 0;
     margin-right: -150px;
@@ -360,27 +367,63 @@
     color: var(--white);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 100%);
 }
-h3{
+
+h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
+
 /* contact styling */
-.container{
+.container {
     text-align: center;
-    color:var(--white);
+    color: var(--white);
+}
+
+.btn-light {
+    font-weight: bold;
+}
+
+.btn-light:hover {
+    color: var(--white);
+    background-color: var(--light-red);
+    border-color: var(--light-red);
+    transition: 0.2s;
 }
 
 /* modal styling */
-.modal{
+.modal {
     color: var(--white);
 }
-.modal-content{
+
+.modal-content {
     background-color: var(--dark-red);
 }
-.form-control{
+
+.form-control {
     background-color: var(--bright-red);
     border: var(--dark-red);
 }
+
+/* footer styling starts here */
+.footer {
+    background-color: var(--dark-red);
+    color: var(--white);
+    width: 90%;
+    margin-left: 10%;
+}
+
+#social-menu,
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+#social-menu li {
+    padding: 0 20px;
+}
+
 /* media screen styling starts here */
 @media screen and (max-width: 768px) {
 
@@ -389,7 +432,7 @@ h3{
         display: none;
     }
 
-    .col {
+    .col, .footer {
         width: 100%;
         margin: 0;
     }
