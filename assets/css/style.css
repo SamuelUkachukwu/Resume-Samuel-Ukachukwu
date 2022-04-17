@@ -358,6 +358,7 @@
     margin: 10px;
     background-color: var(--red);
     color: var(--white);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 100%);
 }
 h3{
     font-family: 'Roboto', sans-serif;
