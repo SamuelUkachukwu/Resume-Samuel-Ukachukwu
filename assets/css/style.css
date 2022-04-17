@@ -3,6 +3,7 @@
 :root {
     --dark-red: #8C1616;
     --red: #BF1F1F;
+    --bright-red:#FF9593;
     --black: #01090D;
     --white: #e6f1ff;
     --green: #80F8FF;
@@ -18,6 +19,7 @@
 /* navbar styling */
 .navbar {
     background-color: var(--dark-red);
+    transition: top 0.3s;
 }
 
 .navbar-brand {
@@ -365,6 +367,18 @@ h3{
 .container{
     text-align: center;
     color:var(--white);
+}
+
+/* modal styling */
+.modal{
+    color: var(--white);
+}
+.modal-content{
+    background-color: var(--dark-red);
+}
+.form-control{
+    background-color: var(--bright-red);
+    border: var(--dark-red);
 }
 /* media screen styling starts here */
 @media screen and (max-width: 768px) {
