@@ -14,10 +14,10 @@
 <body>
   <nav id="nav-bar" class="navbar fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><span class="logo1">shy</span><span class="logo2">BOLD</span></a>
+      <a class="navbar-brand" href="index.html"><span class="logo1">shy</span><span class="logo2">BOLD</span></a>
       <ul class="nav justify-content-end d-none d-md-flex">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About</a>
+          <a class="nav-link" aria-current="page" href="#about-container">About</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
@@ -25,15 +25,15 @@
             Projects
           </a>
           <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-            <li><a class="dropdown-item" href="#">Lotusforever</a></li>
+            <li><a class="dropdown-item" href="#quiz-me">Quiz Me</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Quiz Me</a></li>
+            <li><a class="dropdown-item" href="#lotusforever">Lotusforever</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Medplus Pharmacy</a></li>
+            <li><a class="dropdown-item" href="#other-projects">Medplus Pharmacy</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -54,7 +54,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link active " aria-current="page" href="#about-container">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
@@ -62,15 +62,15 @@
                 Projects
               </a>
               <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                <li><a class="dropdown-item" href="#">Lotusforever</a></li>
+                <li><a class="dropdown-item" href="index.html#quiz-me">Quiz Me</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Quiz Me</a></li>
+                <li><a class="dropdown-item" href="index.html#lotusforever">Lotusforever</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Medplus Pharmacy</a></li>
+                <li><a class="dropdown-item" href="index.html#other-projects">Medplus Pharmacy</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -102,7 +102,7 @@
       <div class="hero-text-box">
         <h1 class="fs-5 hr-txt1">Hi my name is</h1>
         <h2 class="text-uppercase fw-bold hr-txt2">Samuel Ukachukwu.</h2>
-        <h3 class="fs-3 hr-txt3">I am a Fullstack Developer</h3>
+        <h4 class="fs-3 hr-txt3">I am a Fullstack Developer</h4>
         <p class="hr-txt4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia distinctio recusandae ut
           commodi officia cumque eum laborum aspernatur veritatis!</p>
       </div>
@@ -118,7 +118,7 @@
   </section>
 
   <!-- About Me  -->
-  <section class="about col">
+  <section id="about-container" class="about col">
     <div class="about-text about-boxes">
       <h3>About Me</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In odit magni rerum ut vitae repudiandae enim modi!
@@ -133,10 +133,11 @@
   </section>
 
   <!-- QuizMe project display -->
-  <section class="project col">
+  <section id="quiz-me" class="project col">
     <!-- image of quizme project -->
     <div class="project-img">
-      <a href="https://samuelukachukwu.github.io/quiz-me/"><img src="assets/images/QuizMe.jpg" alt="Quiz-Me home page"></a>
+      <a href="https://samuelukachukwu.github.io/quiz-me/"><img src="assets/images/QuizMe.jpg"
+          alt="Quiz-Me home page"></a>
     </div>
 
     <div class="project-info-card">
@@ -165,7 +166,7 @@
   </section>
 
   <!-- Lotusforever project display -->
-  <section class="project col">
+  <section id="#lotusforever" class="project col">
     <div id="lotusforever" class="project-info-card">
       <p class="project-intro reverse">project.</p>
       <h3 class="project-title reverse">Lotusforever</h3>
@@ -185,32 +186,35 @@
       </ul>
       <div class="project-links reverse-flex">
         <a href="https://github.com/SamuelUkachukwu/lotusforever-yoga-website"><i class="fab fa-github"></i></a>
-        <a href="https://samuelukachukwu.github.io/lotusforever-yoga-website/"><i class="fas fa-external-link-square-alt"></i></a>
+        <a href="https://samuelukachukwu.github.io/lotusforever-yoga-website/"><i
+            class="fas fa-external-link-square-alt"></i></a>
       </div>
     </div>
     <div class="project-img">
-      <a href="https://samuelukachukwu.github.io/lotusforever-yoga-website/"><img src="assets/images/lotusforever.jpg" alt="Lotusforever home page"></a>
+      <a href="https://samuelukachukwu.github.io/lotusforever-yoga-website/"><img src="assets/images/lotusforever.jpg"
+          alt="Lotusforever home page"></a>
     </div>
   </section>
 
   <!-- Medplus Pharmacy Project Display -->
 
-  <section class="others col row">
+  <section id="other-projects" class="others col row">
     <div class="card col-sm-5">
       <div class="card-body">
-        <h5 class="card-title project-title reverse">Memory Card Game</h5>
+        <h3 class="card-title project-title reverse">Memory Card Game</h3>
         <h6 class="card-subtitle mb-2 project-title reverse">HTML, CSS and JavaScript</h6>
         <p class="card-text">A fun Memory Card Game app with two levels of entertainment for anyone who likes playing
           for fun or to pass time while waiting for an apointment. (Please Note: App is still in production)</p>
         <div class="project-links reverse-flex">
           <a href="https://github.com/SamuelUkachukwu/Memory-Card-Game"><i class="fab fa-github"></i></a>
-          <a href="https://samuelukachukwu.github.io/Memory-Card-Game/"><i class="fas fa-external-link-square-alt"></i></a>
+          <a href="https://samuelukachukwu.github.io/Memory-Card-Game/"><i
+              class="fas fa-external-link-square-alt"></i></a>
         </div>
       </div>
     </div>
     <div class="card col-sm-5">
       <div class="card-body">
-        <h5 class="card-title project-title">Medplus Pharmacy</h5>
+        <h3 class="card-title project-title">Medplus Pharmacy</h3>
         <h6 class="card-subtitle mb-2 project-title">Python Essential Project</h6>
         <p class="card-text">Is an automated data processing app that assist the pharmacist or pharmacy technician in
           handling medications and minimise medication loss through data analysis and calculation.</p>
@@ -222,7 +226,19 @@
     </div>
   </section>
 
-
+  <!-- contact section  -->
+  <section class="col contact">
+    <div class="container">
+      <h6>Your Next Project?</h6>
+      <h3>Get in touch with me</h3>
+      <div>
+        <p>Now that you know what i can do, your next project is the right moment to work with me as a team, building
+          what you love.</p>
+          <p>The door is open click on the link below and lets get that project done together!</p>
+      </div>
+      <button>Let's build it!</button>
+    </div>
+  </section>
   <footer class="footer">
 
   </footer>

@@ -357,7 +357,15 @@
     background-color: var(--red);
     color: var(--white);
 }
-
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+/* contact styling */
+.container{
+    text-align: center;
+    color:var(--white);
+}
 /* media screen styling starts here */
 @media screen and (max-width: 768px) {
 
