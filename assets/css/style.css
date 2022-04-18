@@ -11,6 +11,24 @@
     /*#8C1616 */
 }
 
+::-webkit-scrollbar {
+    width: .6vw;
+    background-color: var(--dark-red);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--light-red);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -159,7 +177,7 @@
 .col {
     width: 90%;
     margin-left: 10%;
-    padding: 5% 10px;
+    padding: 2% 2% 5% 2%;
     background-color: var(--dark-red);
     display: flex;
     align-items: center;
@@ -289,6 +307,21 @@
 }
 
 /*------------------------------------ project section styling */
+.project-header {
+    width: 90%;
+    margin: 0 0 0 10%;
+    /* padding: 5% 10px; */
+    background-color: var(--dark-red);
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    color:var(--white);
+}
+.project-header h3{
+    margin: 0 0 0 2%;
+    padding-top: 5%;
+}
+
 .project-img {
     width: 70%;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 100%);
@@ -391,8 +424,18 @@ h3 {
     color: var(--white);
 }
 
+.contact-text-big {
+    font-size: clamp(40px, 8vw, 50px);
+}
+
 .phone-number {
     margin-left: 10px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.phone-number:hover {
+    color: var(--light-red);
 }
 
 .btn-light {
