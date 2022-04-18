@@ -271,6 +271,7 @@
     width: 590px;
     background-color: var(--red);
     color: var(--white);
+    border-radius: 5px;
     z-index: 2;
     padding: 20px 20px 40px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 100%);
@@ -302,7 +303,7 @@
     width: 60%;
     background-color: hsla(9, 100%, 64%, 0.5);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: var(--white);
 }
 
@@ -319,7 +320,7 @@
 .project-description {
     text-align: justify;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--red);
 }
 
@@ -389,7 +390,9 @@ h3 {
     text-align: center;
     color: var(--white);
 }
-
+.phone-number{
+    margin-left: 10px;
+}
 .btn-light {
     font-weight: bold;
     transition: 0.2s;
