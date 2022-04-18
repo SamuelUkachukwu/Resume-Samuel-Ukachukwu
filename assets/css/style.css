@@ -8,8 +8,7 @@
     --black: #01090D;
     --white: #e6f1ff;
     --green: #80F8FF;
-    /* }#8C1616 */
-    /* #BF1F1F */
+    /*#8C1616 */
 }
 
 * {
@@ -19,7 +18,7 @@
     font-family: 'Exo', sans-serif;
 }
 
-/* navbar styling */
+/*------------------------------------navbar styling */
 .navbar {
     background-color: var(--dark-red);
     transition: top 0.3s;
@@ -58,15 +57,19 @@
 
 .navbar-nav .nav-link {
     text-align: center;
+    padding: 30px 0;
 }
 
 .offcanvas-body {
     background-color: var(--dark-red);
+    display: flex;
+    align-items: center;
 }
 
 .offcanvas-header {
     justify-content: flex-end;
     height: 66px;
+    background-color: var(--red);
 }
 
 .offcanvas-header .btn-close {
@@ -114,7 +117,7 @@
     top: 6px;
 }
 
-/* hero page styling */
+/*------------------------------------ hero page styling */
 .hero-page {
     background-color: var(--dark-red);
     height: 100vh;
@@ -263,7 +266,7 @@
     bottom: 120px;
 }
 
-/* about page styling */
+/*------------------------------------ about page styling */
 .about-text {
     width: 590px;
     background-color: var(--red);
@@ -284,7 +287,7 @@
     width: 100%;
 }
 
-/* project section styling */
+/*------------------------------------ project section styling */
 .project-img {
     width: 70%;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 100%);
@@ -381,7 +384,7 @@ h3 {
     padding: 20px 0;
 }
 
-/* contact styling */
+/*------------------------------------ contact styling */
 .container {
     text-align: center;
     color: var(--white);
@@ -389,16 +392,16 @@ h3 {
 
 .btn-light {
     font-weight: bold;
+    transition: 0.2s;
 }
 
 .btn-light:hover {
     color: var(--white);
     background-color: var(--light-red);
     border-color: var(--light-red);
-    transition: 0.2s;
 }
 
-/* modal styling */
+/*------------------------------------ modal styling */
 .modal {
     color: var(--white);
 }
@@ -412,7 +415,7 @@ h3 {
     border: var(--dark-red);
 }
 
-/* footer styling starts here */
+/*------------------------------------ footer styling starts here */
 .footer {
     background-color: var(--dark-red);
     color: var(--white);
@@ -436,7 +439,7 @@ h3 {
     padding: 0 20px;
 }
 
-/* media screen styling starts here */
+/*------------------------------------ media screen styling starts here */
 @media screen and (max-width: 768px) {
 
     .side-bar,
