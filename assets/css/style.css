@@ -273,7 +273,7 @@
     color: var(--white);
     border-radius: 5px;
     z-index: 2;
-    padding: 20px 20px 40px;
+    padding: 20px 20px 20px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 100%);
 }
 
@@ -382,7 +382,7 @@
 h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 /*------------------------------------ contact styling */
@@ -390,9 +390,11 @@ h3 {
     text-align: center;
     color: var(--white);
 }
-.phone-number{
+
+.phone-number {
     margin-left: 10px;
 }
+
 .btn-light {
     font-weight: bold;
     transition: 0.2s;
@@ -411,6 +413,10 @@ h3 {
 
 .modal-content {
     background-color: var(--dark-red);
+}
+
+.modal-text {
+    padding: 10px 0;
 }
 
 .form-control {
