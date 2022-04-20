@@ -539,3 +539,9 @@ h3 {
         width: 60%;
     }
 }
+
+@media screen and (max-width: 290px) {
+    .hero-text-box {
+        padding: 0;
+    }
+}
