@@ -81,19 +81,22 @@
 .offcanvas-body {
     background-color: var(--dark-red);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .offcanvas-header {
     justify-content: flex-end;
     height: 66px;
-    background-color: var(--red);
+    background-color: var(--dark-red);
 }
 
 .offcanvas-header .btn-close {
     margin-right: 0.6rem;
 }
 
+.offcanvas-end{
+    border: 10px solid var(--dark-red);
+}
 .navbar-toggler {
     color: var(--white);
     border-color: var(--dark-red);
@@ -310,11 +313,8 @@
 .project-header {
     width: 90%;
     margin: 0 0 0 10%;
-    /* padding: 5% 10px; */
     background-color: var(--dark-red);
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     color:var(--white);
 }
 .project-header h3{
