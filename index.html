@@ -12,7 +12,7 @@
 </head>
 
 <body>
- 
+
   <nav id="nav-bar" class="navbar fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><span class="logo1">shy</span><span class="logo2">BOLD</span></a>
@@ -54,12 +54,12 @@
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
         <div class="offcanvas-header">
           <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
-          aria-label="Close"></button>
+            aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1">
             <li class="nav-item">
-              <a class="nav-link active " aria-current="page" href="#about-container" >About</a>
+              <a class="nav-link active " aria-current="page" href="#about-container">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
@@ -89,7 +89,7 @@
               <a class="nav-link" href="assets/cv/resume.pdf">Resume</a>
             </li>
           </ul>
-        </div> 
+        </div>
       </div>
     </div>
   </nav>
@@ -266,7 +266,8 @@
       <h6>Your Next Project?</h6>
       <h3 class="contact-text-big">Reach Out To Me</h3>
       <div>
-        <p><i class="fas fa-phone-alt" aria-hidden="true"></i><a class="phone-number" href="tel:+353831900005">+353-831900005</a></p>
+        <p><i class="fas fa-phone-alt" aria-hidden="true"></i><a class="phone-number"
+            href="tel:+353831900005">+353-831900005</a></p>
       </div>
       <div>
         <p>Now that you know what i can do, your next project is the right moment to work with me as a team, building
@@ -287,30 +288,31 @@
             <h3 class="modal-title modal-text" id="staticBackdropLabel">Contact Me</h3>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            <form>
+          <div id="modal-body" class="modal-body">
+            <form id="contact-form">
               <div class="row mb-3">
+                <!-- <input type="hidden" name="contact_number"> -->
                 <label for="inputName" class="col-sm-2 col-form-label">Name</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputName" placeholder="John Smith" required>
+                  <input type="text" class="form-control" id="inputName" name="user_name" placeholder="John Smith" required>
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="johnsmith@example.com"
+                  <input type="email" class="form-control" id="inputEmail3" name="user_email" placeholder="johnsmith@example.com"
                     required>
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="texthere" class="col-sm-2 col-form-label">Message</label>
                 <div class="col-sm-10">
-                  <textarea id=texthere class="form-control" name="project-summary" placeholder="Project Description..."
+                  <textarea id=texthere class="form-control" name="message" placeholder="Project Description..."
                     required rows="5" cols="30"></textarea>
                 </div>
               </div>
               <div class="d-grid">
-                <button class="btn btn-light" type="submit">Send Project Request!</button>
+                <button id="btn-submit" class="btn btn-light" type="submit">Send Project Request!</button>
               </div>
             </form>
           </div>
@@ -342,6 +344,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
   <script src="https://kit.fontawesome.com/0e95d75add.js" crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
