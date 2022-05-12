@@ -11,48 +11,35 @@ window.addEventListener("scroll", () => {
 });
 
 (function () {
-    emailjs.init("ikQ7u-QHKbEX7pcU2");
+  emailjs.init("ikQ7u-QHKbEX7pcU2");
 })();
 
-let button = document.getElementById("btn-submit").addEventListener("click", (e) => {
-    e.preventDefault();
-    let form = document.getElementById("contact-form");
-    console.log(form.user_name.value);
-    if (form.user_name.value === "" || form.user_name.value == null) {
-        console.log("empty field detected")
-        if(form.user_email.value === "" || form.user_email.value == null){
-            console.log("email not filled")
-        }else{
-
-            
-        }
-    } else {
-
-        sendEmail(form)
-    }
-
+let form = document.getElementById("contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  let form = document.getElementById("contact-form");
+  console.log(form.user_name.value);
+  sendEmail(form)
 });
 
 function sendEmail(data) {
-    emailjs.send("service_2mp744f", "shybold001", {
-        from_name: data.user_name.value,
-        to_name: data.user_email.value,
-        message: data.message.value,
-        from_email: data.user_email.value
+  emailjs.send("service_2mp744f", "shybold001", {
+      from_name: data.user_name.value,
+      to_name: data.user_email.value,
+      message: data.message.value,
+      from_email: data.user_email.value
     })
-        .then(function () {
-            console.log('SUCCESS!');
-            document.getElementById("modal-body").innerHTML = `<div id="modal-body" class="modal-body"> <h5>Mail Successfully Sent</h5></div>`
-        }
-            , function (error) {
-                console.log('FAILED...', error);
-                document.getElementById("modal-body").innerHTML = `<div id="modal-body"> <h5>Mail Sending Failed</h5>
+    .then(function () {
+      console.log('SUCCESS!');
+      document.getElementById("modal-body").innerHTML = `<div id="modal-body" class="modal-body"> <h5>Mail Successfully Sent</h5></div>`
+    }, function (error) {
+      console.log('FAILED...', error);
+      document.getElementById("modal-body").innerHTML = `<div id="modal-body"> <h5>Mail Sending Failed</h5>
             <p>Error Code: ${error.status}</p></div>
             <button type="button" onclick="resendRequest()" class="btn btn-light">Resend</button>`
-            });
+    });
 }
 
-function resendRequest(){
+function resendRequest() {
   document.getElementById("modal-body").innerHTML = `<div id="modal-body" class="modal-body">
             <form id="contact-form">
               <div class="row mb-3">
@@ -81,9 +68,11 @@ function resendRequest(){
               </div>
             </form>
           </div>`;
-    document.getElementById("btn-submit").addEventListener("click", (e) => {
-        e.preventDefault();
-        let form = document.getElementById("contact-form")
-        sendEmail(form);
-    });
+
+  document.getElementById("contact-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    let form = document.getElementById("contact-form")
+    sendEmail(form);
+  });
+
 }
