@@ -17,7 +17,6 @@ window.addEventListener("scroll", () => {
 let form = document.getElementById("contact-form").addEventListener("submit", (e) => {
   e.preventDefault();
   let form = document.getElementById("contact-form");
-  console.log(form.user_name.value);
   sendEmail(form)
 });
 
@@ -29,18 +28,16 @@ function sendEmail(data) {
       from_email: data.user_email.value
     })
     .then(function () {
-      console.log('SUCCESS!');
-      document.getElementById("modal-body").innerHTML = `<div id="modal-body" class="modal-body"> <h5>Mail Successfully Sent</h5></div>`
+      document.getElementById("modal-body").innerHTML = `<div id="modal-body" class="modal-body modal-items"> <h5>Mail Successfully Sent</h5></div>`
     }, function (error) {
-      console.log('FAILED...', error);
-      document.getElementById("modal-body").innerHTML = `<div id="modal-body"> <h5>Mail Sending Failed</h5>
+      document.getElementById("modal-body").innerHTML = `<div id="modal-body" class="modal-body modal-items"> <h5>Mail Sending Failed</h5>
             <p>Error Code: ${error.status}</p></div>
             <button type="button" onclick="resendRequest()" class="btn btn-light">Resend</button>`
     });
 }
 
 function resendRequest() {
-  document.getElementById("modal-body").innerHTML = `<div id="modal-body" class="modal-body">
+  document.getElementById("modal-body").innerHTML = `<div id="modal-body" class="modal-body modal-items">
             <form id="contact-form">
               <div class="row mb-3">
                 <input type="hidden" name="contact_number">

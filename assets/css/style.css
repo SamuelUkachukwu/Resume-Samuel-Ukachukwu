@@ -8,7 +8,6 @@
     --black: #01090D;
     --white: #e6f1ff;
     --green: #80F8FF;
-    /*#8C1616 */
 }
 
 ::-webkit-scrollbar {
@@ -461,7 +460,9 @@ h3 {
 .modal-text {
     padding: 10px 0;
 }
-
+.modal-items{
+    text-align: center;
+}
 .form-control {
     background-color: var(--bright-red);
     border: var(--dark-red);
